@@ -12,11 +12,18 @@ namespace LunchOrder
         }
         private void ButtonPlaceOrder_Click(object sender, EventArgs e)
         {
-            
+            MessageBox.Show("The Place Order handler is working.");
         }
 
+        private void ButtonResetForm_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("The reset buttong handler is working.");
+        }
 
-
+        private void ButtonExitForm_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("The exit button handler is working.");
+        }
     }
 
 }

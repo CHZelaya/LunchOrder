@@ -214,7 +214,7 @@ namespace LunchOrder
             ButtonPlaceOrder.TabIndex = 3;
             ButtonPlaceOrder.Text = "Place Order";
             ButtonPlaceOrder.UseVisualStyleBackColor = true;
-            ButtonPlaceOrder.Click += this.ButtonPlaceOrder_Click;
+            ButtonPlaceOrder.Click += ButtonPlaceOrder_Click;
             // 
             // ButtonExitForm
             // 
@@ -224,6 +224,7 @@ namespace LunchOrder
             ButtonExitForm.TabIndex = 4;
             ButtonExitForm.Text = "Exit";
             ButtonExitForm.UseVisualStyleBackColor = true;
+            ButtonExitForm.Click += ButtonExitForm_Click;
             // 
             // ButtonResetForm
             // 
@@ -233,6 +234,7 @@ namespace LunchOrder
             ButtonResetForm.TabIndex = 5;
             ButtonResetForm.Text = "Reset";
             ButtonResetForm.UseVisualStyleBackColor = true;
+            ButtonResetForm.Click += ButtonResetForm_Click;
             // 
             // FRMLunchOrder
             // 
@@ -257,7 +259,7 @@ namespace LunchOrder
             ResumeLayout(false);
         }
 
-      
+
 
 
 
