@@ -14,8 +14,9 @@ Create a C# application that allows users to place a lunch order. The applicatio
 ### Main Courses and Prices
 | Main Course  | Price  | Add-ons Available                     | Add-on Price |
 |--------------|--------|---------------------------------------|--------------|
-| Hamburger    | 6.95   | Lettuce, tomato, and onions          | 0.75         |
-|              |        | Ketchup, mustard, and mayo           |              |
+| Hamburger    | 6.95   | Lettuce, tomato, and onions           | 0.75         |
+|              |        | Ketchup, mustard, and mayo            |              |
+|              |        | French Fries                          |              |
 | French fries | 5.95   | Pepperoni                             | 0.50         |
 | Pizza        |        | Sausage                               |              |
 |              |        | Olives                                |              |
