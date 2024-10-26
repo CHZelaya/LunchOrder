@@ -55,28 +55,28 @@ namespace LunchOrder
             CheckAddOn3.CheckedChanged += CheckBox_CheckedChanged;
 
             // Call Method to set up the initial add-on options based on selected radio button
-            UpdateAddOnTexts();
+            UpdateOnScreenText();
 
 
             // Alt key shortcuts for the buttons
-            ButtonPlaceOrder.Text = "&Place Order"; // Alt + P
+            ButtonPlaceOrder.Text = "Place &Order"; // Alt + O
             ButtonResetForm.Text = "&Reset"; // Alt + R
             ButtonExitForm.Text = "&Exit"; // Alt + E
         }
 
         private void RadioButton_CheckedChanged(object sender, EventArgs e) // Method watching the Radio Buttons to see if they are selected.
         {
-            UpdateAddOnTexts();
+            UpdateOnScreenText(); 
         }
 
         private void CheckBox_CheckedChanged(object sender, EventArgs e) // Method watching the Check Boxes to see if they are checked/unchecked.
                                                                          // Used in Add-Ons to update the price of the dynamic subtotal.
         {
-            UpdateAddOnTexts();
+            UpdateOnScreenText();
         }
 
 
-        private void UpdateAddOnTexts()
+        private void UpdateOnScreenText() // Method to update the text on the screen based on the selected radio button and add-ons
         {
             decimal DYNAMIC_SUBTOTAL = 0.0m; // Declare a dynamic total to keep track of the subtotal price of the order
             // Declaring DYNAMIC_SUBTOTAL inside the method to limit its scope to this method only, effectively ending its life cycle after the method is done executing.
@@ -189,7 +189,7 @@ namespace LunchOrder
             TextBoxSubtotal.Text = "";
             TextBoxTax.Text = "";
             TextBoxTotal.Text = "";
-            UpdateAddOnTexts(); // Call UpdateAddOnTexts method to trigger the dynamic subtotal update again.
+            UpdateOnScreenText(); // Call UpdateAddOnTexts method to trigger the dynamic subtotal update again.
                                 // Dynamic subtotal would not update if this method is not called AFTER the reset button is clicked.
         }
 
