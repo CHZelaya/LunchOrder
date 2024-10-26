@@ -43,9 +43,9 @@ namespace LunchOrder
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
-            textBox3 = new TextBox();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
+            TextBoxTotal = new TextBox();
+            TextBoxTax = new TextBox();
+            TextBoxSubtotal = new TextBox();
             ButtonPlaceOrder = new Button();
             ButtonExitForm = new Button();
             ButtonResetForm = new Button();
@@ -148,9 +148,9 @@ namespace LunchOrder
             GroupBoxTotal.Controls.Add(label3);
             GroupBoxTotal.Controls.Add(label2);
             GroupBoxTotal.Controls.Add(label1);
-            GroupBoxTotal.Controls.Add(textBox3);
-            GroupBoxTotal.Controls.Add(textBox2);
-            GroupBoxTotal.Controls.Add(textBox1);
+            GroupBoxTotal.Controls.Add(TextBoxTotal);
+            GroupBoxTotal.Controls.Add(TextBoxTax);
+            GroupBoxTotal.Controls.Add(TextBoxSubtotal);
             GroupBoxTotal.Location = new Point(31, 229);
             GroupBoxTotal.Name = "GroupBoxTotal";
             GroupBoxTotal.Size = new Size(246, 127);
@@ -185,26 +185,26 @@ namespace LunchOrder
             label1.TabIndex = 3;
             label1.Text = "Subtotal:";
             // 
-            // textBox3
+            // TextBoxTotal
             // 
-            textBox3.Location = new Point(102, 80);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(100, 23);
-            textBox3.TabIndex = 2;
+            TextBoxTotal.Location = new Point(102, 80);
+            TextBoxTotal.Name = "TextBoxTotal";
+            TextBoxTotal.Size = new Size(100, 23);
+            TextBoxTotal.TabIndex = 2;
             // 
-            // textBox2
+            // TextBoxTax
             // 
-            textBox2.Location = new Point(102, 51);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 1;
+            TextBoxTax.Location = new Point(102, 51);
+            TextBoxTax.Name = "TextBoxTax";
+            TextBoxTax.Size = new Size(100, 23);
+            TextBoxTax.TabIndex = 1;
             // 
-            // textBox1
+            // TextBoxSubtotal
             // 
-            textBox1.Location = new Point(102, 22);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 0;
+            TextBoxSubtotal.Location = new Point(102, 22);
+            TextBoxSubtotal.Name = "TextBoxSubtotal";
+            TextBoxSubtotal.Size = new Size(100, 23);
+            TextBoxSubtotal.TabIndex = 0;
             // 
             // ButtonPlaceOrder
             // 
@@ -277,9 +277,9 @@ namespace LunchOrder
         private Label label3;
         private Label label2;
         private Label label1;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox TextBoxTotal;
+        private TextBox TextBoxTax;
+        private TextBox TextBoxSubtotal;
         private Button ButtonPlaceOrder;
         private Button ButtonExitForm;
         private Button ButtonResetForm;
