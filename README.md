@@ -21,7 +21,7 @@ Create a C# application that allows users to place a lunch order. The applicatio
 |              |        | Olives                                |              |
 | Salad        | 4.95   | Croutons                              | 0.25         |
 |              |        | Bacon bits                            |              |
-|              |        | Bread sticks                          | 1.00         |
+|              |        | Bread sticks                          |              |
 
 ### Application Behavior
 - At startup, **Hamburger** is selected as the main course, and no add-ons are chosen.
