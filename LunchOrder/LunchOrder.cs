@@ -134,6 +134,14 @@ namespace LunchOrder
 
         }
 
+
+        private (decimal TAX_RATE, decimal TOTAL) calculateTaxAndTotal(decimal total) // Method to calculate the tax and total cost of the order
+        {
+            decimal tax = total * TAX_RATE;
+            decimal grandTotal = tax + TOTAL;
+            return (tax, grandTotal);
+        }
+
         private void ButtonPlaceOrder_Click(object sender, EventArgs e) // Method handling the "Place Order" button click event
         {
             // Calculate the total cost of the order
@@ -169,14 +177,16 @@ namespace LunchOrder
             }
 
             // Calculate the tax and total cost of the order
-            decimal tax = TOTAL * TAX_RATE;
-            decimal totalCost = TOTAL + tax;
+            var (tax, grandTotal) = calculateTaxAndTotal(TOTAL);
 
             // Display the total cost of the order
             TextBoxSubtotal.Text = TOTAL.ToString("c");
             TextBoxTax.Text = tax.ToString("c");
-            TextBoxTotal.Text = totalCost.ToString("c");
+            TextBoxTotal.Text = grandTotal.ToString("c");
 
+            // Disable Radio and Check boxes after order is placed
+            GroupBoxMain.Enabled = false; // Disable the main course radio buttons
+            GroupBoxAddOn.Enabled = false; // Disable the add-on check boxes
         }
 
         private void ButtonResetForm_Click(object sender, EventArgs e) // Methond handling the "Reset" button click event
@@ -189,6 +199,11 @@ namespace LunchOrder
             TextBoxSubtotal.Text = "";
             TextBoxTax.Text = "";
             TextBoxTotal.Text = "";
+
+            // Enable Radio and Check boxes after reset
+            GroupBoxMain.Enabled = true; // Enable the main course radio buttons
+            GroupBoxAddOn.Enabled = true; // Enable the add-on check boxes
+
             UpdateOnScreenText(); // Call UpdateAddOnTexts method to trigger the dynamic subtotal update again.
                                 // Dynamic subtotal would not update if this method is not called AFTER the reset button is clicked.
         }
