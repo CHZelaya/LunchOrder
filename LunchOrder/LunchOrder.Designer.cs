@@ -208,9 +208,10 @@ namespace LunchOrder
             // 
             // ButtonPlaceOrder
             // 
+            ButtonPlaceOrder.Cursor = Cursors.Hand;
             ButtonPlaceOrder.Location = new Point(352, 229);
             ButtonPlaceOrder.Name = "ButtonPlaceOrder";
-            ButtonPlaceOrder.Size = new Size(75, 23);
+            ButtonPlaceOrder.Size = new Size(97, 23);
             ButtonPlaceOrder.TabIndex = 3;
             ButtonPlaceOrder.Text = "Place Order";
             ButtonPlaceOrder.UseVisualStyleBackColor = true;
@@ -218,9 +219,10 @@ namespace LunchOrder
             // 
             // ButtonExitForm
             // 
+            ButtonExitForm.Cursor = Cursors.Hand;
             ButtonExitForm.Location = new Point(352, 333);
             ButtonExitForm.Name = "ButtonExitForm";
-            ButtonExitForm.Size = new Size(75, 23);
+            ButtonExitForm.Size = new Size(97, 23);
             ButtonExitForm.TabIndex = 4;
             ButtonExitForm.Text = "Exit";
             ButtonExitForm.UseVisualStyleBackColor = true;
@@ -228,9 +230,10 @@ namespace LunchOrder
             // 
             // ButtonResetForm
             // 
+            ButtonResetForm.Cursor = Cursors.Hand;
             ButtonResetForm.Location = new Point(352, 279);
             ButtonResetForm.Name = "ButtonResetForm";
-            ButtonResetForm.Size = new Size(75, 23);
+            ButtonResetForm.Size = new Size(97, 23);
             ButtonResetForm.TabIndex = 5;
             ButtonResetForm.Text = "Reset";
             ButtonResetForm.UseVisualStyleBackColor = true;
@@ -241,7 +244,7 @@ namespace LunchOrder
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLight;
-            ClientSize = new Size(514, 386);
+            ClientSize = new Size(522, 386);
             Controls.Add(ButtonResetForm);
             Controls.Add(ButtonExitForm);
             Controls.Add(ButtonPlaceOrder);
