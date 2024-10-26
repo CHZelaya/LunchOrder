@@ -17,8 +17,8 @@ Create a C# application that allows users to place a lunch order. The applicatio
 | Hamburger    | 6.95   | Lettuce, tomato, and onions           | 0.75         |
 |              |        | Ketchup, mustard, and mayo            |              |
 |              |        | French Fries                          |              |
-| French fries | 5.95   | Pepperoni                             | 0.50         |
-| Pizza        |        | Sausage                               |              |
+| Pizza        | 5.95   | Pepperoni                             | 0.50         |
+|              |        | Sausage                               |              |
 |              |        | Olives                                |              |
 | Salad        | 4.95   | Croutons                              | 0.25         |
 |              |        | Bacon bits                            |              |
